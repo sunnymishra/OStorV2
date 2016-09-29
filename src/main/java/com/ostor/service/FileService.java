@@ -41,7 +41,7 @@ public class FileService {
         return "Got it!";
     }
     
-    @GET
+    @POST
     @Path("list_folder")
     @Produces(MediaType.APPLICATION_JSON)
     public Response listFolder(@HeaderParam("Authorization") String authToken, ListFolderRequest request){
